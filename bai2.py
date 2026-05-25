@@ -15,8 +15,8 @@
 # Chuỗi giao dịch thực tế được phân cách bằng ký tự | 
 #  transaction.split("-") là sai vì nó không pk chuỗi phân cách chính trong mẫu dữ liệu
 # Khi split sai:
-# parts[0] → " nguyEN van a | PYTHON"
-# parts[1] → "01 | 15000000 | paid "
+# parts[0] => " nguyEN van a | PYTHON"
+# parts[1] => "01 | 15000000 | paid "
 # => dữ liệu bị lệch cột.
 # Cần .strip() từng phần để xóa khoảng trắng thừa sau khi tách dữ liệu.
 # cần đổi amount sang số để định dạng tiền đúng, tính toán được, tránh lỗi kiểu dữ liệu
